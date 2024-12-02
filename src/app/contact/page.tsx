@@ -2,8 +2,8 @@
 import React, { FormEvent, useState } from "react";
 import { Meteors} from "@/app/components/ui/meteors";;
 export default function page() {
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
+  const [email, setEmail] = useState<any>();
+  const [message, setMessage] = useState<any>();
 
   function handleClick(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
